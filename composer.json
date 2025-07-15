@@ -1,0 +1,10 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "google/recaptcha": "^1.2",
+        "firebase/php-jwt": "^6.3",
+        "google/apiclient": "^2.12.1",
+        "facebook/graph-sdk": "^5.7",
+        "altorouter/altorouter": "^2.0"
+    }
+}
