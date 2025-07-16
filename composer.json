@@ -4,7 +4,17 @@
         "google/recaptcha": "^1.2",
         "firebase/php-jwt": "^6.3",
         "google/apiclient": "^2.12.1",
-        "facebook/graph-sdk": "^5.7",
+        "facebook/graph-sdk": "^6.0",
         "altorouter/altorouter": "^2.0"
-    }
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        },
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
