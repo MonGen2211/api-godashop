@@ -1,20 +1,13 @@
 {
     "require": {
-        "phpmailer/phpmailer": "^6.6",
-        "google/recaptcha": "^1.2",
-        "firebase/php-jwt": "^6.3",
-        "google/apiclient": "^2.12.1",
-        "facebook/graph-sdk": "^6.0",
-        "altorouter/altorouter": "^2.0"
+      "php": "^8.1",
+      "altorouter/altorouter": "^2.0",
+      "firebase/php-jwt": "^6.9"
     },
     "config": {
-        "platform": {
-            "php": "7.4"
-        },
-        "allow-plugins": {
-            "php-http/discovery": true
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
-}
+      "platform": {
+        "php": "8.1.0"
+      }
+    }
+  }
+  
