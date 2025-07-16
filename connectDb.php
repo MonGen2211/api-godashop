@@ -2,8 +2,9 @@
 // Create connection
 // $conn = new mysqli(SERVERNAME, USERNAME, PASSWORD, DBNAME);
 $conn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
-
-if ($conn->connect_error) {
-    die("Kết nối thất bại: " . $conn->connect_error);
+try {
+    $pdo = new PDO($dsn, $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
-mysqli_set_charset($conn, "utf8");
